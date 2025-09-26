@@ -1,5 +1,5 @@
 'use client';
-import Card  from "@/components/common/Card";
+import Card from "@/components/common/Card";
 export default function About() {
   return (
     <div>
