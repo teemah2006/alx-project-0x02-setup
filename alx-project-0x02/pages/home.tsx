@@ -2,6 +2,7 @@
 import Card from "@/components/common/Card";
 import { useState } from "react";
 import PostModal from "@/components/common/PostModal";
+import Header from "@/components/layout/Header";
 export default function About() {
     const [showModal, setShowModal] = useState(false);
 
@@ -15,6 +16,7 @@ export default function About() {
     }
   return (
     <div>
+        <Header />
         {showModal && <PostModal onClose={handleCloseModal} onSubmit={handleSubmit}/>}
       <h1>Home page</h1>
         <Card title="Card Title" content="This is a sample card content." />
